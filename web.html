@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Kevin's World</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link type="text/css" href="assets/css/Demo.css">
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <style type="text/css">
+	   .mbox{margin-top:20px;}
+	   .sysSelect{width:240px; height:28px; line-height:28px; border:1px solid #000; font-size:14px;}
+	   .sysSelect option{height:240px; line-height:28px;}
+	   .selectType{position:relative; width:240px; height:30px; line-height:30px; font-size:14px;}
+	   .selectType{position:relative; width:240px; height:30px; line-height:30px; font-size:14px;}
+	   .selectType .ipt{width:240px; height:28px; line-height:28px; border:1px solid #000; display:inline-block; text-decoration:none; color:#fff; text-indent:5px; outline:none;}
+	   .selectType span{position:absolute; width:220px; background-color:rgba(255,255,255,0.5); border:1px solid #fff; border-top-style:dashed; left:0px;  top:22px; text-indent:6px; line-height:26px; display:none;}
+	   .selectType span a{color:#333; display:block; text-decoration:none;}
+	   .selectType span a:hover{background-color:#000; color:#fff;}
+	   .selectType .searchArrow{border-top:6px solid #fff; border-left:6px solid #000; border-right:6px solid #000; position:absolute; width:0; height:0; top:6px; right:12px; cursor:pointer; -webkit-transition:-webkit-transform 0.2s ease-in; -moz-transition:-moz-transform 0.2s ease-in; -o-transition:-o-transform 0.2s ease-in; transition:transform 0.2s ease-in; overflow:hidden; text-indent:-2000px;}
+	   .selectType .searchArrowRote{-moz-transform:rotate(180deg); -moz-transform-origin:50% 30%; -webkit-transform:rotate(180deg); -webkit-transform-origin:50% 30%; -o-transform:rotate(180deg); -o-transform-origin:50% 30%; transform:rotate(180deg);transform-origin:50% 30%; filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); top:-9px/9;}
+        </style>
+        <script type="text/javascript">
+            $(function(){
+	     $("#selectTypeText").click(function () {
+		 $(this).next("span").slideDown(200);
+		 $(".searchArrow").addClass("searchArrowRote");
+        });
+	     $("#selectTypeText").blur(function () {
+		 $(this).next("span").slideUp(200);
+		 $(".searchArrow").removeClass("searchArrowRote");
+	    });
+
+	    $("#selectTypeMenu>a").click(function () {
+        $("#selectTypeText").text($(this).text());
+        $("#selectTypeRel").attr("value", $(this).attr("rel"));
+        $(this).parent().slideUp(200);
+		$(".searchArrow").removeClass("searchArrowRote");
+        return false;
+        });
+        });
+        </script>
+	</head>
+    
+	<body class="subpage">
+		<!-- Header -->
+			<header id="header">
+                <div class="logo"><a href="index.html">Kevin's World <span>by PoChun</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+        <!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li>Statistics in Biology</li>
+                    <form>
+                        <SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)">
+                        <OPTION value = "#"style = "color: #000">Go for it</OPTION>
+                        <OPTION value = "HW1_pcc402.html"style = "color: #000">Homework 1</OPTION>
+                        <OPTION value = "HW02_pcc402.html"style = "color: #000">Homework 2</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">豬肉</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">牛肉</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">素食</OPTION>
+                        </SELECT>
+                    </form>
+                    <li>Programming for Biologists</li>
+                    <form>
+                        <SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)" >
+                        <OPTION value = "#"style = "color: #000">Go for it</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Homework 1</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">雞肉</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">豬肉</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">牛肉</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">素食</OPTION>
+                        </SELECT>
+                    </form>
+                    <li><a href="web.html">Materials for making web</a></li>
+                    <form>
+                        <SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)">
+                        <OPTION value = "#"style = "color: #000">Go for it</OPTION>
+                        <OPTION value = "template2/index.html"style = "color: #000">Course 1</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 2</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 3</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 4</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 5</OPTION>
+                        </SELECT>
+                    </form>
+                    <div class="mbox" style="color: transparent">
+				    <span class="selectType" >
+					<a title="" href="#" class="ipt"  id="selectTypeText">My contact information</a>
+					<span>
+						<a href="https://facebook.com/kevin.chun.378">Facebook</a>
+						<a href="https://www.instagram.com/kevinchen5572758/">Instagram</a>
+						<a href="https://www.linkedin.com/in/po-chun-chen-4a9970b7/">LinkedIn</a>
+                        <a href="#">Top</a>
+					</span>
+				    </span>
+			        </div>
+                    <li><a href="mailto:pcc402@nyu.edu">Contact me by email</a></li>
+				</ul>            
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Hope you find enjoy here</p>
+						<h2>Welcome to the web!</h2>
+					</header>
+				</div>
+			</section>
+        <!-- 9/24/2019 -->
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+                            <header class="align-center">
+                            <h2>Materials for making web </h2>
+                            <header class="align-left">
+                            <h3><a href="/Users/PoChun/Desktop/My Webpagel local_test/template2/index.html">Course 1</a></h3>
+                            <a href="/Users/PoChun/Desktop/My Webpagel local_test/template2.rar" download="template2.rar"><strong>Download the material from the link</strong></a>
+							<p>The first course will mostly cover on how to create an account on Github and how to download the Git. Also, I will explain why we should do these two things and the concept you should prepare for the next course. </p>
+                            <header class="align-left">
+                            <h3>Course 2</h3>
+							<p></p>
+                            <header class="align-left">
+                            <h3>Course 3</h3>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</section>
+                            
+        <!-- Three -->
+			<section id="three" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p class="special">Course friends</p>
+					</header>
+					<div class="gallery">
+                        <div>
+							<div style ="text-align:center;">
+                                <p>The 1st Course friends</p>
+                                <div class="table-wrapper">
+									<table class="alt" width="50">
+										<tbody>
+											<tr>
+												<td>hxa_吳</td>
+											</tr>
+											<tr>
+												<td>xoxxxd_ng</td>
+											</tr>
+											<tr>
+												<td>hxxn_林</td>
+											</tr>
+											<tr>
+												<td>yxo_張</td>
+											</tr>
+											<tr>
+												<td>rxxn_游</td>
+											</tr>
+                                            <tr>
+												<td>hk_林</td>
+											</tr>
+                                            <tr>
+												<td>bxxly</td>
+											</tr>
+                                            <tr>
+												<td>vaxxire</td>
+											</tr>
+                                            <tr>
+												<td>exig</td>
+											</tr>
+                                            <tr>
+												<td>yxx.yi</td>
+											</tr>
+                                            <tr>
+												<td>sxxxh_楊</td>
+											</tr>
+                                            <tr>
+												<td>xxna_王</td>
+											</tr>
+                                            <tr>
+												<td>wxi_tu</td>
+											</tr>
+                                            <tr>
+												<td>xktxa_陳</td>
+											</tr>
+                                            <tr>
+												<td>vixxxt</td>
+											</tr>
+                                            <tr>
+												<td>rxx_莊</td>
+											</tr>
+                                            <tr>
+												<td>yxxg_徐</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+                        <div>
+							<div style ="text-align:center;">
+                                <p>The 2nd Course friends</p>
+                                <div class="table-wrapper">
+									<table class="alt" width="50">
+										<tbody>
+											<tr>
+												<td>豬肉麵</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+                        <div>
+							<div style ="text-align:center;">
+                                <p>The 3rd Course friends</p>
+                                <div class="table-wrapper">
+									<table class="alt" width="50">
+										<tbody>
+											<tr>
+												<td>羊肉湯</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>                    
+        
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://facebook.com/kevin.chun.378" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/kevinchen5572758/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:pcc402@nyu.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Kevin's World. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

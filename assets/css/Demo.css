@@ -1,0 +1,23 @@
+﻿body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}
+ol,ul{margin:0; padding:0;list-style:none}
+img{border:0;}
+
+body{color:#3B3B3B; font-size:90%; line-height:1.5; font-family:Arial, sans-serif;}
+.DemoTop{background:#E2E2E2; height:52px; padding:8px; border-bottom:#B9B9B9 1px solid;}
+.DemoTit{clear:both; text-align:center; text-shadow:2px -1px 1px #C9C9C9; border-bottom:#D6D6D6 1px solid; background-color:#EDEDED; font-size:1.6em; padding:3px 5px;}
+.DemoCon{overflow:hidden; background-color:#EDEDED; border-top:#fff 1px solid;}
+.DemoCon:before, .DemoCon:after{content:""; display:table;}
+.DemoCon:after{clear:both;}
+.DemoCon{*zoom:1;}
+.DemoCode,.DemoView{background-color:#fff; margin-bottom:10px; min-height:500px; width:50%; padding-bottom:4000px;  margin-bottom:-4000px;background-color:#FFF;}
+.DemoCode{float:left; margin-left:-1px;}
+.DemoView{float:right; margin-right:-1px;}
+.DemoCode h2,.DemoView h2{background-color:#F5F5F5; padding:2px 5px; margin:5px 9px; border-bottom:#EAEAEA 1px dashed; font-size:1.3em;}
+.DemoCodeIn,.DemoViewIn{padding:10px;}
+.DemoBottom{text-align:center; background-color:#E2E2E2; border-top:#B9B9B9 1px solid; text-shadow:1px -1px 1px #8F8F8F; position:relative; clear:both;}
+.DemoBottomIn{border-top:#fff 1px solid; padding:10px;}
+.DemoCon p{margin:8px;}
+.logo{float:left;}
+.cl{clear:both;}
+.p10{padding:10px;}
+
