@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html>
+	<head>
+		<title>Kevin's World</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link type="text/css" href="assets/css/Demo.css">
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <style type="text/css">
+	   .mbox{margin-top:20px;}
+	   .sysSelect{width:240px; height:28px; line-height:28px; border:1px solid #000; font-size:14px;}
+	   .sysSelect option{height:240px; line-height:28px;}
+	   .selectType{position:relative; width:240px; height:30px; line-height:30px; font-size:14px;}
+	   .selectType{position:relative; width:240px; height:30px; line-height:30px; font-size:14px;}
+	   .selectType .ipt{width:240px; height:28px; line-height:28px; border:1px solid #000; display:inline-block; text-decoration:none; color:#fff; text-indent:5px; outline:none;}
+	   .selectType span{position:absolute; width:220px; background-color:rgba(255,255,255,0.5); border:1px solid #fff; border-top-style:dashed; left:0px;  top:22px; text-indent:6px; line-height:26px; display:none;}
+	   .selectType span a{color:#333; display:block; text-decoration:none;}
+	   .selectType span a:hover{background-color:#000; color:#fff;}
+	   .selectType .searchArrow{border-top:6px solid #fff; border-left:6px solid #000; border-right:6px solid #000; position:absolute; width:0; height:0; top:6px; right:12px; cursor:pointer; -webkit-transition:-webkit-transform 0.2s ease-in; -moz-transition:-moz-transform 0.2s ease-in; -o-transition:-o-transform 0.2s ease-in; transition:transform 0.2s ease-in; overflow:hidden; text-indent:-2000px;}
+	   .selectType .searchArrowRote{-moz-transform:rotate(180deg); -moz-transform-origin:50% 30%; -webkit-transform:rotate(180deg); -webkit-transform-origin:50% 30%; -o-transform:rotate(180deg); -o-transform-origin:50% 30%; transform:rotate(180deg);transform-origin:50% 30%; filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); top:-9px/9;}
+        </style>
+        <script type="text/javascript">
+            $(function(){
+	     $("#selectTypeText").click(function () {
+		 $(this).next("span").slideDown(200);
+		 $(".searchArrow").addClass("searchArrowRote");
+        });
+	     $("#selectTypeText").blur(function () {
+		 $(this).next("span").slideUp(200);
+		 $(".searchArrow").removeClass("searchArrowRote");
+	    });
+
+	    $("#selectTypeMenu>a").click(function () {
+        $("#selectTypeText").text($(this).text());
+        $("#selectTypeRel").attr("value", $(this).attr("rel"));
+        $(this).parent().slideUp(200);
+		$(".searchArrow").removeClass("searchArrowRote");
+        return false;
+        });
+        });
+        </script>
+	</head>
+	<body>
+        
+		<!-- Header -->
+			<header id="header" class="alt">
+                <div class="logo"><a href="main.html"><span>Designed by PoChun</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links" >
+                    <li><a href="main.html">Home</a></li>
+                    <li>Statistics in Biology</li>
+                    <form>
+                        <SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)">
+                        <OPTION value = "#"style = "color: #000">Go for it</OPTION>
+                        <OPTION value = "Statistics in Biology/HW01_pcc402.html"style = "color: #000">Homework 1</OPTION>
+                        <OPTION value = "Statistics in Biology/HW02_pcc402.html"style = "color: #000">Homework 2</OPTION>
+                        <OPTION value = "Statistics in Biology/HW03_pcc402.html"style = "color: #000">Homework 3</OPTION>
+                        <OPTION value = "Statistics in Biology/HW04_pcc402.html"style = "color: #000">Homework 4</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">素食</OPTION>
+                        </SELECT>
+                    </form>
+                    <li>Programming for Biologists</li>
+                    <form>
+                        <SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)" >
+                        <OPTION value = "#"style = "color: #000">Go for it</OPTION>
+                        <OPTION value = "Programming for Biologists/hw1_pcc402.html"style = "color: #000">Homework 1</OPTION>
+                        <OPTION value = "Programming for Biologists/hw2_pcc402.html"style = "color: #000">Homework 2</OPTION>
+                        <OPTION value = "Programming for Biologists/hw3_pcc402.html"style = "color: #000">Homework 3</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">牛肉</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">素食</OPTION>
+                        </SELECT>
+                    </form>
+                    <li>Some playing stuff</li>
+                    <form>
+                        <SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)">
+                        <OPTION value = "#"style = "color: #000">Go for it</OPTION>
+                        <OPTION value = "MDB/movies.html"style = "color: #000">Taiwan's beauty</OPTION>
+                        <OPTION value = "table.html"style = "color: #000">Biology program tables</OPTION>
+                        <OPTION value = "table_comment.html"style = "color: #000">Bioinformatics program table</OPTION>
+                        <OPTION value = "basic/index.html"style = "color: #000">Taoism</OPTION>
+                        <OPTION value = "https://public.flourish.studio/visualisation/780105/"style = "color: #000">Bar chart race</OPTION>                        
+                        </SELECT>
+                    </form>
+                    <li><a href="web.html">Materials for making web</a></li>
+                    <form>
+                        <SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)">
+                        <OPTION value = "#"style = "color: #000">Go for it</OPTION>
+                        <OPTION value = "template2/index.html"style = "color: #000">Course 1</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 2</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 3</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 4</OPTION>
+                        <OPTION value = "hw01_pcc402.html"style = "color: #000">Course 5</OPTION>
+                        </SELECT>
+                    </form>
+                    <div class="mbox" style="color: transparent">
+				    <span class="selectType" >
+					<a title="" href="#" class="ipt"  id="selectTypeText">My contact information</a>
+					<span>
+						<a href="https://facebook.com/kevin.chun.378">Facebook</a>
+						<a href="https://www.instagram.com/kevinchen5572758/">Instagram</a>
+						<a href="https://www.linkedin.com/in/po-chun-chen-4a9970b7/">LinkedIn</a>
+                        <a href="#">Top</a>
+					</span>
+					<em class="searchArrow hh abs">下拉选择</em>
+				    </span>
+			        </div>
+                    <li><a href="mailto:pcc402@nyu.edu">Contact me by email</a></li>
+				</ul>            
+			</nav>
+		<!-- Banner -->
+        
+			<section class="banner full">
+				<article>
+					<img src="images/Mazu.jpg" height="200%" alt=""/>
+					<div class="inner">
+						<header>
+							<p>Taiwanese Sea goddess</p>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/Monk.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>Time to ponder your future</p>
+							<h2>Like me</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/Anonymous.jpg" height="200%" alt="" />
+					<div class="inner">
+						<header>
+							<p>We are Legion.</p>
+                            <p>We do not Forgive.</p>
+                            <p>We do not Forget.</p>
+                            <p>Expect Us.</p>
+							<h4>We are Anonymous</h4>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/Poseidon.jpg" height="150%" alt="" />
+					<div class="inner">
+						<header>
+							<p>The brother of Zeus</p>
+							<h2>With trident</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/Jelly.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Just a beautiful picture</p>
+							<h2>No words to say</h2>
+						</header>
+					</div>
+				</article>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/Me.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>A photo taken in my college year</p>
+										<h2>Me and the lab poster</h2>
+									</header>
+									<u><h3> A little bit about me in the past</h3></u>
+                                    <p>I studied biology and computer science with both my bachelor and master's degree at National Tsing Hua Univesiry, Taiwan. I met a lot of great people there, especially my PI in master's degree. His name can be found on the poster.</p>
+									<footer class="align-center">
+										<a href="https://facebook.com/kevin.chun.378" class="button alt">My facebook</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/MeSis.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>It is the 15th Taiwanese day tho</p>
+										<h2>Me and my sis in the Metro baseball game</h2>
+									</header>
+									<u><h3> A little bit about me right now</h3></u>
+                                    <p>I am now studying Biology (Bioinformatics and System Biology) at New York University. I would like to thank my family for supporting me all the time and give me the chance to see the world. I am planning for applying the PhD and hope to finish before 30.</p>
+									<footer class="align-center">
+										<a href="https://www.linkedin.com/in/po-chun-chen-4a9970b7/" class="button alt">My Linkedln</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style4">
+				<div class="inner">
+					<header class="align-center">
+						<p>My family took wedding photos again in my parent's 25th Wedding Anniversary</p>				
+                    </header>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<p class="special">Just some photos I would like to share during my life time</p>
+					</header>
+					<div class="gallery">
+                        <div>
+							<div class="image fit" style ="text-align:center;">
+								<a href="#"><img src="images/family2.jpg" alt="" /></a>
+                                <p>I love my family</p>
+							</div>
+						</div>
+						<div>
+							<div class="image fit" style ="text-align:center;">
+								<a href="#"><img src="images/NightMarket.jpg" alt="" /></a>
+                                <p>I really miss the night market in Taiwan</p>
+							</div>
+						</div>
+						<div>
+							<div class="image fit"; style ="text-align:center;">
+								<a href="#"><img src="images/MeBro.jpg" alt="" /></a>
+                                <p>Take picture with my bro in my college graduation</p>
+							</div>
+						</div>
+                        <div>
+							<div class="image fit">
+								<a href="http://nickstrayer.me/RMarkdown_Sites_tutorial/"><img src="images/Site.JPG" alt="" /></a>
+                                <br>
+                                <p>I would like to thank to these two authors. Without them, I will not be able to write this webpage and upload to the Github. Please click the photo for more information!</p>
+							</div>
+						</div>
+                        <div>
+							<div class="image fit">
+								<a href="http://nckuacc.github.io/lastwork/"><img src="images/Site2.JPG" alt="" /></a>
+                                <br>
+                                <p>It is a really great website teach you how to design and finish your website in just 30 mins. Check it out like me and you will learn more. Please click the photo for more information!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://facebook.com/kevin.chun.378" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/kevinchen5572758/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:pcc402@nyu.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Kevin's World. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    </body>
+</html>
