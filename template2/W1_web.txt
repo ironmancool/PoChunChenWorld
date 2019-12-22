@@ -1,0 +1,48 @@
+1. How to create an account on GitHub
+- 首先登入GitHub的首頁:https://github.com/
+- 點擊sign up，填完以後就可以開始使用GitHub
+
+2. How to download Git on your computer
+
+分成Windows和Mac版本，
+簡單來說是下載一個終端機(shell)的概念(Windows多半為圖形介面，點來點去)，但Git是一種命令行的形式，所以:
+Windows:請下載cmder(https://cmder.net/)，當中的mini版本即可。
+Mac:請自行任選一種(https://formac.informer.com/conemu)，
+
+終端機軟體其實適用於所有Linux指令(Windows自帶的cmd, command line tool)，功能是仿照Linux，所以建議還是下載cmder)
+
+到目前都還沒介紹Git的真正用途，下一章會詳細介紹
+
+3. Why we should do the things above
+
+GitHub在整個網頁教學的任務中，是扮演一個倉庫的角色(放你的所有網頁的相關檔案，html、css檔案，甚至所有的圖片檔等等，更重要的是，這個倉庫不僅僅是一個雲端硬碟放東西而已，而是能夠當作一個虛擬的主機來使用，簡單來說就把她想像成一個放網頁的空間就好。
+
+而Git的角色，雖然跟上面的GitHub名字很像，但其實後者比前者更早出現，是一種管理版本的平台，換句話舉例來說，
+在你每次打報告的時候，會有版本1、版本2、版本3_教授、版本4_教授_我，好幾個版本，自己也搞得很複雜，Git的工作就是幫你追蹤這些版本，甚至在你出槌的時候，跟你說不用緊張，我這裡有你上次存的那個版本。
+有的人會覺得好像沒什麼，我都記得住，不過想像自己在一個15人的團隊，每天小明和小華都瘋狂上傳五個版本，結果他們離職後，老闆跟你說叫你用最新版的繼續改，這下不就慘了，剛好Git就可以跟你說哪個是最新版本，有最多內容。
+
+可參考
+https://learn.gencore.bio.nyu.edu/git-and-github/
+https://gitbook.tw/chapters/introduction/what-is-git.html
+
+4. Short summary
+
+這一周的課程主要是介紹這兩個工具，顯得很無趣，不過工欲善其事，必先利其器，就把這兩個工具當作寫網頁的前置任務吧~所以這周要確認兩件事:
+- 有GitHub帳號
+- 有可以執行Git指令的軟體(cmder等)
+
+5. *For people searching for advanced topics only
+
+在後續的課程會大量使用一些Linux指令(在清大大家都用過ipconfig，查詢ip)，可以先熟悉一下，如果沒看這部分也沒關係，後面還是會打上每個步驟中指令的功能
+
+強烈建議參考這個網站，感恩鳥哥，讚嘆鳥哥。
+(http://linux.vbird.org/linux_basic/redhat6.1/linux_06command.php/)
+
+ls: 列出當前目錄的所有檔案名稱
+pwd: 顯示目前的所在位置(以windows舉例，就是我在桌面或是某個資料夾內)
+cd: Change direction，變換工作的資料夾或是路徑
+mkdir: 創建一個空的資料夾，記得命名 ex: mkdir Kevin(創立一個叫Kevin的資料夾)
+
+
+
+

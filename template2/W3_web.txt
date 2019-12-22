@@ -1,0 +1,81 @@
+1. Modifying the index.html
+
+這個部分就不用我多講了，我們現在有了模板之後，一般首頁的名字就是index.html，有可能有一個以上的html檔案，不過都請先打開index.html，
+
+根據上次的課程，我們了解到html的一些組成架構，這次要來介紹標籤的使用(上一次課程的補充部分)，也就是我們很有可能要時常修改的地方，會有舉例，但應該很難全部涵蓋，有問題再說。
+
+舉例來說:
+a. 這是我們第一次課程的網頁原始碼
+
+<h2>Outline</h2> 這是一個二級標題(><裡面可以放內容)
+<p> 1. How to create an account on GitHub</p> (這是一個段落)
+<p> 2. How to download Git on your computer</p> (這也是一個段落)
+<p> 3. Why we should do the things above</p>
+<p> 4. *For people searching for advanced topics only</p>
+
+b. 這也是我們第一次課程的網頁原始碼
+
+<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;"> (這是一個區塊，以div來表示，現在也當作排版用，甚至一些基本的css，也可以直接放在裡面)
+<h2>Before that</h2>
+<p>Let take a look of my website, the .js file is running on the web. In this way, you can easily embed any websites you are interested in to your website</p>
+<p>Try to scroll up and down. Try to link to other links.</p>
+<p>I hope you guys can not only finish your website after the course but also learn how to use other people's resources to present in the meeting or even improve your life.</p>
+</div> (這是div的結尾，記得如果要複製別人的區塊，要記得要有開始有結束，<div>-開始，</div>-結束)
+
+c. 這是我網頁的原始碼
+
+<div class="box"> (這是區塊是一個box元素)
+<div class="image fit"> (區塊內又放了一張圖)
+<img src="images/Me.jpg"/> (連結到我的圖片，images是資料夾，Me.jpg是圖片)
+</div>
+<div class="content"> (區塊內放了我的內容區塊)					
+<header class="align-center">						
+<p>A photo taken in my college year</p>
+<h2>Me and the lab poster</h2>							
+</header>
+<u><h3> A little bit about me in the past</h3></u> (有下畫線的三級標題)
+<p>I studied biology and computer science with both my bachelor and master's degree at National Tsing Hua Univesiry, Taiwan. I met a lot of great people there, especially my PI in master's degree. His name can be found on the poster.</p>
+
+<footer class="align-center"> (區塊內放了我的footer區塊)			
+<a href="https://facebook.com/kevin.chun.378" class="button alt">My facebook</a> (這是box裡的footer，而用一個超連結連到我的臉書個人頁面)
+</footer>
+</div>
+</div>
+
+d. 這也是我的網頁原始碼
+
+<li><a href="main.html">Home</a></li> (這是一個列表並且有連結到首頁)
+<li>Statistics in Biology</li> (這是下一個列表的標題)
+<form> (這是一個選單，有五個選項)
+<SELECT NAME="STYLE" Size=0 onChange="window.open(this.value)">
+<OPTION value = "#"style = "color: #000">Go for it</OPTION>
+ <OPTION value = "Statistics in Biology/HW01_pcc402.html"style = "color: #000">Homework 1</OPTION>
+<OPTION value = "Statistics in Biology/HW02_pcc402.html"style = "color: #000">Homework 2</OPTION>
+<OPTION value = "Statistics in Biology/HW03_pcc402.html"style = "color: #000">Homework 3</OPTION>
+<OPTION value = "Statistics in Biology/HW04_pcc402.html"style = "color: #000">Homework 4</OPTION>
+<OPTION value = "Statistics in Biology/HW04_pcc402.html"style = "color: #000">素食</OPTION>
+</SELECT> (每個選項內可以自行連結的網頁，好比這個是value = "hw01_pcc402.html"，所以就會連到Statistics in Biology資料夾的HW04_pcc402.html網頁)
+</form>
+
+這部分真的就是要請各位多花時間自行修改內容了，
+各類的標籤參考(https://www.w3schools.com/tags/tag_ol.asp)
+
+2. Tool for web developers
+
+這個是最重要的部分，如果可以畫星星，就多畫一點，
+Google為了方便這些網頁的開發人員(?)，所以當你在開網頁的時候，點滑鼠右鍵，會跑出兩個超重要的選項，
+
+- 一個是檢視網頁原始碼(Ctrl+U)
+原始碼可以說就是這個網頁的html file，有些人會把全部的東西都塞在這裡，也有人會分css、js檔，你就可以從這裡去看每個人的寫法，詳細的應用上，在爬蟲的時候，非常方便，只要查同一個標籤的資料有沒有你要的，全部爬下來就好。
+
+- 一個是檢查(Ctrl+Shift+I)
+檢查就是另一個更厲害的功能了，單純點檢查，可能看不出什麼端倪，
+但是如果你將自己想要查詢的字反白，再點右鍵，點檢查，就會發現原來這段文字在網頁原始碼的這個地方啊!運用這些標籤啊!再來旁邊還會顯示他運用的css(也可能沒有)，如果有的話，可以直接在這裡修改顏色樣式，不過只是測試，真的修改還是要去文字編輯器修改喔。
+
+3. Short summary
+
+恭喜你啊~完成這周的課，基本上你的網頁就完成囉~就只剩下上傳，趕緊去複習第一周的兩個工具，要用Cmder，創立一個Git，把網頁上傳到GitHub囉。
+
+小提醒:
+改html其實非常繁瑣，有想要的功能或是不知道用哪個標籤，就趕緊Google，而我的習慣是，同時打開index.html(Google會打開index.html，不過不是網址，而是你的本地端檔案地址)，和Brackets來修改index.html，當我修改一段文字或是一個效果的時候，我就把網頁更新一次，看改出來的效果如何，避免一次改太多。
+

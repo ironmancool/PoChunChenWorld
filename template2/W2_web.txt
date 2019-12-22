@@ -1,0 +1,69 @@
+1. Basics before your website journey
+
+在這一周開始前，有幾個重要的概念要傳達，這是一個速成的課程，所以沒有太深入的講解各種網頁語法，不過有一些基本的概念還是要傳達給各位
+
+網頁:一般可以分成html檔、css檔和js檔，俗稱為前端(front-end)，三者分別是用於
+
+html:宣告這整個網頁的架構，包含了用什麼樣的版本，什麼樣的語系，引進了什麼css檔案，引進了什麼js檔案，整體的架構是像下面這樣，
+
+<!DOCTYPE html> (這是一個html檔案喔)
+<html> 
+    <head>
+        <title>Example</title> 
+	(放一些你引入的css檔案或js檔案、網頁的顯示名稱和用的編碼等等)
+    </head>
+    <body>
+        <p>
+	This is an example of a simple HTML page with one paragraph.
+	</p>
+	(網頁的精華，文字圖片連結等等都放在這裡，最下面可能會放js的連結)
+    </body>
+</html>
+
+css:網頁的美術編輯師，有了文字，有了圖片，這個文字的字體多大、顏色是什麼，都是css的範疇，我自己是時常忽略這塊，但這塊做好，卻能讓別人看你的網站時，覺得不會礙眼，配色不會傷眼睛。
+
+js:網頁程式，平常寫程式的語言有C、C++、Python等等，而專屬於網頁的就是Javascript，一種用於撰寫網頁程式的語言，並不是所有網站都有，但你想放個時鐘在網頁上的時候，就可以用這個來撰寫。
+
+再一次強調，因為是速成的課程，我們大部分只會處理與html檔案相關的問題(修改文字、段落、標題)，不大會去修改到css的配色或是js的功能，換句話說，就是用別人現成的下去改。
+
+2. Start your website journey
+
+終於到這一步啦，這一步非常非常花時間，也可以完全不花時間(至少要把網頁打得內容改成自己想打得，個人照也要換成自己的XDD) 
+
+- 首先請各位先快速瀏覽過這個網站，http://nckuacc.github.io/lastwork/，接下來你會發現有幾件事要做，
+
+a. 找到屬於自己的網頁模板
+各位可以自行搜索bootstrap template或是網頁template等等，不過我自己是到這個網站上找(https://templated.co/，有將近20頁，可以自行慢慢挑選)，找到之後，將template按download之後下載下來。
+
+小提醒:美觀當然是第一要件，不過還要確定網頁是不是自己想像的，很多通常只會做首頁，其餘次要的頁數要自行設計，就顯得不方便，最好是有基本的2-3頁，並且已經做好連結的template會比較適合，可以自己慢慢點點看看，不要心急。
+
+b. 找到一個可以編輯別人模板的文字編輯器
+這個部分，網站是建議sublime(https://www.sublimetext.com)，
+不過我個人是用Adobe Brackets(http://brackets.io/)
+可以自行挑選喜歡的文字編輯器，當然你要用windows內建的記事本，我也是沒有意見，後來我比較喜歡Adobe Brackets + Notepad++，因為前者比較美，而後者在搜尋要修改的文字上面非常方便。
+
+3. Short summary
+
+這周我基本上只放兩節而已，不過卻可以非常花時間，了解一下網頁的組成檔案是什麼，html(index.html就是你的首頁)、css、js，因為未來就是直接用文字編輯器(Brackets)來修改裡面的文字或是語法，這樣才知道要改哪裡。
+
+可以在找尋模板上花一點心思，當然學會之後，要用新模板改都不成問題，但第一次就下點苦心，才不會很辛苦，所以本周要確認幾件事:
+- 知道網頁的各種檔案
+- 找到一個美美功能齊全的模板
+- 有一個不錯用的文字編輯器
+
+4. *For people searching for advanced topics only
+
+同樣的，這部分不必詳讀沒關係，但一定會有幫助，就先來介紹到底改html中的一些重要元素，
+
+a. <!doctype html>: 這個絕對要放在開頭，不過模板基本上都有放了
+b. <meta charset="utf-8">: 跟你說我用的網頁字元編碼是utf-8
+c. <link rel="stylesheet" href="css/theme/black.css">: 放在head裡，跟你說我把我的black.css檔案放在我的css資料夾中的theme資料夾中
+d. <title> </title>: 放網頁的名稱 <title>網頁名稱 </title>
+e. <!-- -->: <!--這是註解的語法，純粹用來說明這段code在幹嘛-->
+f. <h1></h1> <h2></h2> <h3></h3>: 這是一個一級二級三級標題(字體由大到小)
+g. <script></script> :這中間是夾javascript的程式，沒事別亂改
+h. <p></p>:這是一個段落
+i. <a href=""></a>: <a href="超連結，連結的檔案or網頁">顯示的名稱</a>
+
+
+
