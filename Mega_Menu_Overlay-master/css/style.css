@@ -14,7 +14,17 @@ header {
 }
 
 footer {
-    padding: 2em;
+  padding: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+@media only screen and (max-width: 480px) {
+footer { display: none; }
 }
 
 header .logo {
