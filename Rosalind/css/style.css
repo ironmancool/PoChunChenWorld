@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin");
 body, html {
   font-family: 'Comic Sans MS', sans-serif;
-      text-shadow: 0.5px 0.5px black;
-
+  text-shadow: 0.3px 0.3px black;
   background-image: url("../marble2.jpg");
   opacity: 0.8;
   margin: 0;
@@ -28,6 +27,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
 footer { display: none; }
+h3 { display: none; }
 }
 
 header .logo {
@@ -41,26 +41,41 @@ header .menu-btn {
 }
 
 section {
-  padding: 4em;
+  padding: 1.5em;
 }
 
 section h1 {
-  font-size: 4em;
+  font-family: "Lobster", serif;
+  font-size: 5em;
   margin: 1em auto;
   width: 70%;
+  text-align: center;
   text-transform: inherit;
+  margin-top: 0.10em;
+  margin-bottom: 0.10em;
 }
 
 section h2 {
+  font-family: "Lobster", serif;
   font-size: 2em;
+  margin: 1em auto;
+  width: 70%;
+  text-transform:inherit;
+  margin-bottom: 0.10em;
+}
+
+section h3 {
+  text-shadow: none;
+  font-size: 1.3em;
   margin: 1em auto;
   width: 70%;
   text-transform:inherit;
 }
 
-section h1::before {
+section h1 {
   content: '';
-  border-top: 6px solid black;
+  border-width:5px;  
+  border-bottom-style:solid;  
   display: block;
 }
 
@@ -105,6 +120,9 @@ nav ul a {
   font-weight: bold;
   font-size: 1.5em;
 }
+nav h1{
+    font-size: 1.2em;
+}
 
 nav ul span {
   color: black;
@@ -113,7 +131,7 @@ nav ul span {
 }
 
 nav ul li {
-  opacity: ;
+  opacity:1 ;
 }
 
 .show-menu {
