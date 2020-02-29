@@ -20,24 +20,46 @@
 		  display: block; 
 		  touch-action: none; 
 		}
+        
+        
 		h1.title{
-              color: rgba(0,0,0);
-  width: 11em;
-  display: inline-block;
-  border-right: .05em solid;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 2s steps(11),
-  caret 1s steps(1) infinite;
+          color: rgba(0,0,0);
+          width: 11em;
+          display: inline-block;
+          border-right: .05em solid;
+          overflow: hidden;
+          white-space: nowrap;
+          animation: typing 2s steps(11),
+          caret 1s steps(1) infinite;
 		  position: absolute;
 		  top: 35%;
 		  left: 35%;
 		  margin: auto;
 		  text-align: center;
 		}
+        @media only screen and (max-width: 600px) {
+          h1.title{
+          color: rgba(0,0,0);
+          width: 13em;
+          display: inline-block;
+          border-right: .05em solid;
+          overflow: hidden;
+          white-space: nowrap;
+          animation: typing 2s steps(13),
+          caret 1s steps(1) infinite;
+		  position: absolute;
+		  top: 35%;
+		  left: 15%;
+		  margin: auto;
+		  text-align: center;
+          font-size: 20px;
+          height: auto;
+          }
+        }
+        
         @keyframes typing {
-  from { width: 0 }
-}
+        from { width: 0 }
+        }
 
 	</style>
 </head>
